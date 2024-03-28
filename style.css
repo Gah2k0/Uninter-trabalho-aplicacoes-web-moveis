@@ -16,10 +16,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--dark-blue);
 }
 
 body {
-    background-color: var(--branco);
+    background-color: var(--pale-blue);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -33,7 +34,7 @@ header {
     width: 100%;
     height: 5rem;
     align-content: center;
-    background-color: var(--azul-agua);
+    background-color: var(--medium-blue);
     margin-bottom: 30px;
 }
 
@@ -65,14 +66,14 @@ li a {
 
 li a:hover {
     background-color: var(--branco);
-    color: var(--azul-agua);
+    color: var(--dark-blue);
     border-radius: 10px;
     transition: ease-in-out 0.1s;
 }
 
 .ativo {
     background-color: var(--branco);
-    color: var(--azul-agua);
+    color: var(--dark-blue);
     border: 2px solid var(--branco);
     border-radius: 10px;
 }
