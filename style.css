@@ -1,7 +1,15 @@
 :root {
     --azul: #004fff;
     --preto: #050505;
-    --branco: #fff
+    --branco: #fff;
+    --verde-agua: #d2e9e3;
+    --azul-agua: #1a747d;
+    --azul-royale: #a8d6e5;
+    --cinza: #e2e2e2;
+    --dark-blue: #023E8A;
+    --medium-blue: #0077B6;
+    --light-blue: #90E0EF;
+    --pale-blue: #CAF0F8;
 }
 
 * {
@@ -11,17 +19,8 @@
 }
 
 body {
-    background-color: #d9ddeb;
+    background-color: var(--branco);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-header {
-    margin: auto;
-    width: 100%;
-    height: 5rem;
-    align-content: center;
-    background-color: aliceblue;
-    margin-bottom: 30px;
 }
 
 h1 {
@@ -29,19 +28,27 @@ h1 {
     margin-inline: auto;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /* background-color: #defffd; */
+header {
+    margin: auto;
+    width: 100%;
+    height: 5rem;
+    align-content: center;
+    background-color: var(--azul-agua);
+    margin-bottom: 30px;
 }
+
 nav {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: aliceblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -50,18 +57,48 @@ li {
 }
 
 li a {
-    color: #000;
+    color: var(--branco);
     padding: 8px 16px;
     text-decoration: none;
     font-weight: 600;
 }
 
 li a:hover {
-    background-color: #f8f8f8;
-    color: rgb(0, 0, 0);
+    background-color: var(--branco);
+    color: var(--azul-agua);
+    border-radius: 10px;
+    transition: ease-in-out 0.1s;
 }
 
+.ativo {
+    background-color: var(--branco);
+    color: var(--azul-agua);
+    border: 2px solid var(--branco);
+    border-radius: 10px;
+}
 
+section {
+    margin: auto;
+    width: 50%;
+    height: 5rem;
+    align-content: center;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+p {
+    padding: 10px;
+}
 
 footer {
     position: relative;
