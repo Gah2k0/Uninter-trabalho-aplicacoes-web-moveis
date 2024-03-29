@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: var(--pale-blue);
+    background-color: var(--branco);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -31,11 +31,11 @@ h1 {
 
 header {
     margin: auto;
-    width: 100%;
-    height: 5rem;
+    width: 100vw;
+    height: 12vh;
     align-content: center;
     background-color: var(--medium-blue);
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 nav {
@@ -78,6 +78,11 @@ li a:hover {
     border-radius: 10px;
 }
 
+main {
+    height: 55vh;
+    margin: 40px;
+}
+
 section {
     margin: auto;
     width: 50%;
@@ -85,8 +90,18 @@ section {
     align-content: center;
 }
 
-section h2 {
+ h2 {
     text-align: center;
+    margin: 30px;
+}
+
+img {
+    display: inline-block;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
 }
 
 section article {
@@ -99,6 +114,43 @@ section article {
 
 p {
     padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.inputs-container {
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.inputs {
+    width: 20vw;
+    height: 5vh;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--dark-blue);
+    border-radius: 1rem;
+    margin: 0 auto;
+  }
+
+  .inputs:hover {
+    transition: 0.2s all;
+    transform:scale(1.01);
+}
+
+  #aceita {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
@@ -121,5 +173,5 @@ footer a {
 
 footer a:hover {
     transition: ease-in-out .5s;
-    color: var(--azul);
+    color: var(--preto);
 }

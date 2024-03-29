@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <ul>
                 <li><a href="index.html">Sobre mim</a></li>
                 <li><a href="formacao.html">Formação</a></li>
@@ -17,13 +17,17 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <main>
+        <h2>Entre em Contato</h2>
         <form action="POST">
-            <input type="text" name="" id="" >
-            <input type="email" name="" id="" >
-            <input type="submit" value="Ok">
+            <div class="inputs-container">
+                <input type="text" name="nome" id="nome" placeholder="Nome" class="inputs">
+                <input type="email" name="email" id="email" placeholder="Email" class="inputs">
+                <textarea name="mensagem" id="mensagem" placeholder="Deixe sua mensagem" cols="30" rows="10" class="inputs"></textarea>
+            </div>
+            <button type="submit" class="inputs" id="aceita">Enviar!</button>
         </form>
-    </section>
+    </main>
     <footer>
         <h3>Developed by Gabriel Francisco.</h3>
         <div>
