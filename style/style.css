@@ -32,10 +32,10 @@ h1 {
 header {
     margin: auto;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     align-content: center;
     background-color: var(--medium-blue);
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -46,25 +46,25 @@ nav {
     gap: 10px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+nav ul li {
     float: left;
     padding: 10px;
 }
 
-li a {
+nav ul li a {
     color: var(--branco);
     padding: 8px 16px;
     text-decoration: none;
     font-weight: 600;
 }
 
-li a:hover {
+nav ul li a:hover {
     background-color: var(--branco);
     color: var(--dark-blue);
     border-radius: 10px;
@@ -79,20 +79,27 @@ li a:hover {
 }
 
 main {
-    height: 55vh;
-    margin: 40px;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
-    margin: auto;
     width: 50%;
-    height: 5rem;
+    height: 27vh;
     align-content: center;
+}
+
+section article {
+    width: 100%;
+    display: flex;
+    gap: 10px;
 }
 
  h2 {
     text-align: center;
-    margin: 30px;
+    margin: 10px;
 }
 
 img {
@@ -104,14 +111,6 @@ img {
     flex-direction: column;
 }
 
-section article {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
 p {
     padding: 10px;
 }
@@ -120,6 +119,21 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+article ul {
+    list-style-type: none;
+}
+
+article ul li {
+    margin: 0 0 10px 0;
+}
+
+article ul li a {
+    /* color: var(--branco); */
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .inputs-container {
@@ -151,6 +165,21 @@ form {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+}
+
+
+.about-me {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer {
