@@ -150,7 +150,7 @@ article ul li a {
     transform:scale(1.01);
 }
 
-  #aceita {
+  #accept {
     color: rgb(255, 255, 255);
     font-weight: 700;
     background-color: var(--dark-blue);
