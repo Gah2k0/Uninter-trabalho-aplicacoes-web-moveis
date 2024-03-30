@@ -1,18 +1,11 @@
-:root {
-    --azul: #004fff;
-    --preto: #050505;
-    --branco: #fff;
-    --verde-agua: #d2e9e3;
-    --azul-agua: #1a747d;
-    --azul-royale: #a8d6e5;
-    --cinza: #e2e2e2;
+:root { /* Definindo as cores que serão utilizadas no projetos em variáveis */
+    --black: #050505;
+    --white: #fff;
     --dark-blue: #023E8A;
     --medium-blue: #0077B6;
-    --light-blue: #90E0EF;
-    --pale-blue: #CAF0F8;
 }
 
-* {
+* { /* Resetando algumas configurações padrões do CSS e adicionando algumas outras*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +13,7 @@
 }
 
 body {
-    background-color: var(--branco);
+    background-color: var(--white);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -58,23 +51,23 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--branco);
+    color: var(--white);
     padding: 8px 16px;
     text-decoration: none;
     font-weight: 600;
 }
 
 nav ul li a:hover {
-    background-color: var(--branco);
+    background-color: var(--white);
     color: var(--dark-blue);
     border-radius: 10px;
     transition: ease-in-out 0.1s;
 }
 
-.ativo {
-    background-color: var(--branco);
+.current-page { /* classe utilizada para que o link da página atual fique em destaque na barra de navegação */
+    background-color: var(--white);
     color: var(--dark-blue);
-    border: 2px solid var(--branco);
+    border: 2px solid var(--white);
     border-radius: 10px;
 }
 
@@ -106,7 +99,7 @@ img {
     display: inline-block;
 }
 
-.cursos {
+.courses {
     display: flex;
     flex-direction: column;
 }
@@ -130,7 +123,6 @@ article ul li {
 }
 
 article ul li a {
-    /* color: var(--branco); */
     padding: 8px 16px;
     text-decoration: none;
     font-weight: 600;
@@ -202,5 +194,5 @@ footer a {
 
 footer a:hover {
     transition: ease-in-out .5s;
-    color: var(--preto);
+    color: var(--black);
 }
